@@ -1,33 +1,16 @@
 package com.company;
 
-public class Admin {
+public class Admin extends Person{
     private long adminId;
-    private String firstName;
-    private String lastName;
-    private String emailId;
-    private String phoneNumber,address;
     public Admin(){}
-    public Admin(long adminId,String firstName,String lastName,String emailId,String phoneNumber){
+    public Admin(long adminId){
+        super();
         this.adminId=adminId;
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.emailId=emailId;
-        this.phoneNumber=phoneNumber;
+
 
     }
     public long getAdminId(){
         return adminId;
     }
-    public String getFirstName(){
-        return firstName;
-    }
-    public String getLastName(){
-        return lastName;
-    }
-    public String getEmailId(){
-        return emailId;
-    }
-    public String getPhoneNumber(){
-        return phoneNumber;
-    }
+
 }
