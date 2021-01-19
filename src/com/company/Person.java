@@ -4,20 +4,21 @@ public class Person {
     String firstName;
     String lastName;
     String emailId;
-    String phoneNumber,address;
+    String phoneNumber;
     String gender;
     int age;
     public Person(){
     }
-    public Person(String firstName,String lastName,String emailId,String phoneNumber, String address, String gender,int age){
+    public Person(String firstName,String lastName,String emailId,String phoneNumber,  String gender,int age){
         this.firstName=firstName;
         this.lastName= lastName;
         this.emailId=emailId;
         this.phoneNumber= phoneNumber;
-        this.address= address;
+        //this.address= address;
         this.gender= gender;
         this.age=age;
     }
+
 
     public String getFirstName(){
         return firstName;
@@ -31,9 +32,9 @@ public class Person {
     public String getPhoneNumber(){
         return phoneNumber;
     }
-    public String getAddress(){
+    /*public String getAddress(){
         return address;
-    }
+    }*/
     public String getGender(){
         return gender;
     }

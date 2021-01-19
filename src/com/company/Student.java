@@ -11,14 +11,18 @@ public class Student extends Person{
     public Student(){
         super();
     }
-    public Student(long studentId,String firstName,String lastName,String emailId,String phoneNumber,String address,String gender,int age){
-       super(firstName,lastName,emailId,phoneNumber,address,gender,age);
+    public Student(long studentId,String firstName,String lastName,String emailId,String phoneNumber,String gender,int age){
+       super(firstName,lastName,emailId,phoneNumber,gender,age);
 
         this.studentId=studentId;
 
     }
 
 
+    public void add(){
+        Address A= new Address();
+        A.getAddress();
+    }
     public long getStudentId(){
 
         return studentId;
