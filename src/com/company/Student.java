@@ -6,23 +6,16 @@ import java.util.Map;
 public class Student extends Person{
 
     private long studentId;
-    String firstName;
-    String lastName;
-    String emailId;
-    String phoneNumber,address;
-    String gender;
-    int age;
+
 
     public Student(){
         super();
     }
-    public Student(long studentId,String firstName,String lastName,String emailId){
-       super(firstName,lastName,emailId,"9163456784","home","f",24);
+    public Student(long studentId,String firstName,String lastName,String emailId,String phoneNumber,String address,String gender,int age){
+       super(firstName,lastName,emailId,phoneNumber,address,gender,age);
 
         this.studentId=studentId;
-      //  this.firstName=firstName;
-        //this.lastName=lastName;
-        //this.emailId=emailId;
+
     }
 
 
