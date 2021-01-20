@@ -3,7 +3,7 @@ package com.company;
 public class Address {
     //String address;
     String street;
-    int House_no;
+    String House_no;
     String state;
     String country;
     int zipCode;
@@ -11,7 +11,7 @@ public class Address {
     public Address(){
 
     }
-    public Address(String street, int House_no, String state, String country, int zipCode){
+    public Address(String street, String House_no, String state, String country, int zipCode){
         //this.address= address;
         this.street= street;
         this.House_no= House_no;
@@ -26,7 +26,7 @@ public class Address {
     public String getStreet(){
         return street;
     }
-    public int getHouse_no(){
+    public String getHouse_no(){
         return House_no;
     }
     public String getState(){
@@ -38,5 +38,9 @@ public class Address {
     public int getZipCode(){
         return zipCode;
     }
+    /*public void printAddress(){
+        System.out.println("Address is"+ getStreet() + "\n" +getHouse_no()+ "\n" +getState()+ "\n" +getCountry()+ "\n " +getZipCode() );
+    }*/
+
 
 }
