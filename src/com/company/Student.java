@@ -19,7 +19,7 @@ public class Student extends Person{
     }
 
     public Address addi(){
-        Address A=new Address("6000 j street");
+        Address A=new Address("Cadillac Drive",120,"CA","USA",95825);
         return A;
 
     }
@@ -29,7 +29,7 @@ public class Student extends Person{
     }
     public void printDetails(){
         //System.out.println("Id is:"+studentId);
-        System.out.println("student details are:"+ studentId + "\n" +getFirstName()+ "\n" +getLastName()+ "\n" +getEmailId()+ "\n College address is" +addi().getAddress());
+        System.out.println("student details are:"+ studentId + "\n" +getFirstName()+ "\n" +getLastName()+ "\n" +getEmailId()+ "\n student address is" +addi() );
     }
 
 }
