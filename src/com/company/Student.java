@@ -18,10 +18,10 @@ public class Student extends Person{
 
     }
 
+    public Address addi(){
+        Address A=new Address("6000 j street");
+        return A;
 
-    public void add(){
-        Address A= new Address();
-        A.getAddress();
     }
     public long getStudentId(){
 
@@ -29,7 +29,7 @@ public class Student extends Person{
     }
     public void printDetails(){
         //System.out.println("Id is:"+studentId);
-        System.out.println("student details are:"+ studentId + "\n" +getFirstName()+ "\n" +getLastName()+ "\n" +getEmailId() );
+        System.out.println("student details are:"+ studentId + "\n" +getFirstName()+ "\n" +getLastName()+ "\n" +getEmailId()+ "\n College address is" +addi().getAddress());
     }
 
 }

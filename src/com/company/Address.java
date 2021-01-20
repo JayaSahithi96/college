@@ -11,6 +11,6 @@ public class Address {
     }
     public String getAddress(){
         return address;
-        //System.out.println("Address is");
+       // System.out.println("6000 j street");
     }
 }
