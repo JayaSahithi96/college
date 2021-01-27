@@ -1,6 +1,10 @@
 package com.company;
 
-public class Address {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Address<street> {
     //String address;
     String street;
     String House_no;
@@ -23,6 +27,8 @@ public class Address {
         return address;
        // System.out.println("6000 j street");
     }*/
+
+
     public String getStreet(){
         return street;
     }
@@ -38,9 +44,11 @@ public class Address {
     public int getZipCode(){
         return zipCode;
     }
-    /*public void printAddress(){
-        System.out.println("Address is"+ getStreet() + "\n" +getHouse_no()+ "\n" +getState()+ "\n" +getCountry()+ "\n " +getZipCode() );
-    }*/
+
+    /*public List<ArrayList> getAllListItems(){
+        List<ArrayList> L= new ArrayList();
+
+        return L;*/
+    }
 
 
-}
