@@ -20,18 +20,13 @@ public class Student extends Person{
         this.studentId=studentId;
 
     }
-
-    public Address addi(){
-
-        Address A=new Address("Cadillac Drive","Apt#120","CA","USA",95825);
-        return A;
-
-    }
+    
     public long getStudentId(){
 
         return studentId;
     }
     public void printDetails(){
+        Address A1 = new Address();
         //System.out.println("Id is:"+studentId);
         Scanner scan= new Scanner(System.in);
         System.out.println("Enter the Id:");
@@ -45,11 +40,25 @@ public class Student extends Person{
         lastName=scan2.nextLine();
         Scanner scan3= new Scanner(System.in);
         System.out.println("Enter Student Email address:");
-        emailId= scan3.nextLine();
-
+        emailId = scan3.nextLine();
+        System.out.println("Enter street: ");
+        String street = scan3.nextLine();
+        A1.setStreet(street);
+        System.out.println("Enter house number: ");
+        String House_no = scan3.nextLine();
+        A1.setHouse_no(House_no);
+        System.out.println("Enter state: ");
+        String state = scan3.nextLine();
+        A1.setState(state);
+        System.out.println("Enter country: ");
+        String country = scan3.nextLine();
+        A1.setCountry(country);
+        System.out.println("Enter zip code: ");
+        int zipCode = scan3.nextInt();
+        A1.setZipCode(zipCode);
 
         System.out.println("student details are:"+ studentId + "\n" +getFirstName()+ "\n" +getLastName()+ "\n" +getEmailId());
-        System.out.println("Address is "+ addi().getStreet() + " " +addi().getHouse_no()+ " " +addi().getState()+ " " +addi().getCountry()+ " " +addi().getZipCode() );
+        System.out.println("Address is "+ A1.getStreet() + " " +A1.getHouse_no()+ " " +A1.getState()+ " " +A1.getCountry()+ " " +A1.getZipCode() );
     }
 
 }
